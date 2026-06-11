@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+struct Student
+{
+    int roll;
+    char name[30];
+};
+
+void display(Student s)
+{
+    cout << s.roll << endl;
+    cout << s.name << endl;
+}
+
+int main()
+{
+    Student s;
+
+    cin >> s.roll >> s.name;
+
+    display(s);
+
+    return 0;
+}
